@@ -1,4 +1,4 @@
-import { Gift, BookOpen, BarChart, Bookmark, Target } from "lucide-react";
+import { Gift, BookOpen, BarChart, Bookmark, Target, Smartphone } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -27,10 +27,15 @@ const Features = () => {
       description: "Solve only the questions you answered incorrectly for focused improvement",
       icon: Target,
     },
+    {
+      title: "Study on Two Devices",
+      description: "Easily access your question bank on both your phone and iPad, with synchronized progress",
+      icon: Smartphone,
+    },
   ];
 
   return (
-    <section className="py-24 px-4 bg-gray-50">
+    <section id="features" className="py-24 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <h2 className="section-title">Amazing Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
