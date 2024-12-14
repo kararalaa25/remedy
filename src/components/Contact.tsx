@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Youtube, Mail } from "lucide-react";
+import { Instagram, Linkedin, Youtube, Mail, Telegram } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
@@ -16,6 +16,11 @@ const Contact = () => {
       icon: <Youtube className="social-icon" />,
       url: "https://www.youtube.com/@ReMedy-i4t",
       label: "YouTube",
+    },
+    {
+      icon: <Telegram className="social-icon" />,
+      url: "https://t.me/+QxjT7L0JugA4YWYy",
+      label: "Telegram",
     },
     {
       icon: <Mail className="social-icon" />,

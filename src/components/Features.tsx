@@ -42,7 +42,7 @@ const Features = () => {
           {features.map((feature) => (
             <div key={feature.title} className="feature-card">
               <div className="mb-4">
-                <feature.icon className="w-12 h-12 text-primary mx-auto" />
+                <feature.icon className="w-12 h-12 mx-auto" style={{ color: '#fcac4d' }} />
               </div>
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
