@@ -16,7 +16,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/9df97c49-cd0d-46b4-be46-9c1b429470ac.png" 
               alt="ReMedy Logo" 
-              className="h-8 w-8" 
+              className="h-10 w-10 md:h-12 md:w-12" 
             />
             <span className="text-2xl font-bold">
               <span style={{ color: "#fcac4d" }}>Re</span>

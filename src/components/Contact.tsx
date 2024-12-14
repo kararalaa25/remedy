@@ -20,9 +20,9 @@ const Contact = () => {
     {
       icon: (
         <img
-          src="/lovable-uploads/6d33d161-d59d-4eeb-9c31-71d1ef0a7da1.png"
+          src="/lovable-uploads/dfd7463b-f51c-4dcf-8f48-f0a4bc883941.png"
           alt="Telegram"
-          className="w-8 h-8 hover:opacity-80 transition-opacity"
+          className="w-8 h-8 opacity-60 hover:opacity-100 transition-opacity"
         />
       ),
       url: "https://t.me/+QxjT7L0JugA4YWYy",
