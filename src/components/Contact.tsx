@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Youtube, Mail } from "lucide-react";
+import { Instagram, Linkedin, Youtube, Mail, Send } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
@@ -18,13 +18,7 @@ const Contact = () => {
       label: "YouTube",
     },
     {
-      icon: (
-        <img
-          src="/lovable-uploads/cab53a47-91f4-4a21-b24f-5a90833ff9df.png"
-          alt="Telegram"
-          className="w-8 h-8 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-110"
-        />
-      ),
+      icon: <Send className="w-8 h-8 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-110" />,
       url: "https://t.me/+QxjT7L0JugA4YWYy",
       label: "Telegram",
     },
