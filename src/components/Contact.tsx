@@ -3,17 +3,17 @@ import { Instagram, Linkedin, Youtube, Mail } from "lucide-react";
 const Contact = () => {
   const socialLinks = [
     {
-      icon: <Instagram className="social-icon" />,
+      icon: <Instagram className="w-8 h-8 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-110" />,
       url: "https://www.instagram.com/remedy_iq/",
       label: "Instagram",
     },
     {
-      icon: <Linkedin className="social-icon" />,
+      icon: <Linkedin className="w-8 h-8 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-110" />,
       url: "https://www.linkedin.com/in/remedy-platform-928176334/",
       label: "LinkedIn",
     },
     {
-      icon: <Youtube className="social-icon" />,
+      icon: <Youtube className="w-8 h-8 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-110" />,
       url: "https://www.youtube.com/@ReMedy-i4t",
       label: "YouTube",
     },
@@ -29,7 +29,7 @@ const Contact = () => {
       label: "Telegram",
     },
     {
-      icon: <Mail className="social-icon" />,
+      icon: <Mail className="w-8 h-8 opacity-60 hover:opacity-100 transition-all duration-200 hover:scale-110" />,
       url: "mailto:remedyplatform@gmail.com",
       label: "Email",
     },

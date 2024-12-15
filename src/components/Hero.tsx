@@ -16,7 +16,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/9f2a41a3-ca0c-4999-bd30-9043082c7f22.png" 
               alt="Apple logo" 
-              className="w-6 h-6 invert brightness-200"
+              className="w-6 h-6 brightness-0 invert"
             />
             iOS
           </a>
