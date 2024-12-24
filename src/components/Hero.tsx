@@ -10,7 +10,9 @@ const Hero = () => {
         </p>
         <div className="flex justify-center gap-6">
           <a
-            href="#"
+            href="https://apps.apple.com/us/app/remedy-platform/id6737006336"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200"
           >
             <img 
