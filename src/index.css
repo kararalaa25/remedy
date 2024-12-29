@@ -32,34 +32,31 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-white text-foreground antialiased;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
 .hero-text {
-  @apply text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight;
-}
-
-.card-hover {
-  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
-}
-
-.social-icon {
-  @apply w-8 h-8 text-gray-600 hover:text-primary transition-colors duration-200;
-}
-
-.nav-link {
-  @apply text-gray-600 hover:text-primary transition-colors duration-200;
+  @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-[#34ccd2] to-[#fcac4d] bg-clip-text text-transparent;
 }
 
 .section-title {
-  @apply text-4xl font-bold mb-12 text-center;
+  @apply text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#34ccd2] to-[#fcac4d] bg-clip-text text-transparent;
 }
 
 .feature-card {
-  @apply bg-white rounded-2xl p-8 shadow-md card-hover;
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100;
 }
 
 .about-card {
-  @apply bg-white rounded-2xl p-8 shadow-md card-hover;
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100;
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-[#34ccd2] transition-colors duration-200;
+}
+
+.app-button {
+  @apply flex items-center gap-2 bg-gradient-to-r from-[#34ccd2] to-[#fcac4d] text-white px-8 py-4 rounded-full hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl font-semibold text-lg;
 }

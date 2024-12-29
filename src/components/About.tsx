@@ -15,14 +15,16 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 px-4">
+    <section id="about" className="py-24 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="section-title text-black">About Remedy</h2>
+        <h2 className="section-title">About Remedy</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {sections.map((section) => (
             <div key={section.title} className="about-card">
-              <h3 className="text-xl font-bold mb-4">{section.title}</h3>
-              <p className="text-gray-600">{section.content}</p>
+              <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-[#34ccd2] to-[#fcac4d] bg-clip-text text-transparent">
+                {section.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-center">{section.content}</p>
             </div>
           ))}
         </div>

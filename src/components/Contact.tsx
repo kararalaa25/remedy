@@ -30,9 +30,12 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 px-4 bg-gray-50">
+    <section id="contact" className="py-24 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="section-title">Get in Touch</h2>
+        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          Connect with us on social media or reach out directly via email. We're here to help!
+        </p>
         <div className="flex justify-center space-x-8">
           {socialLinks.map((link) => (
             <a
