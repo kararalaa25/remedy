@@ -13,7 +13,7 @@ const Hero = () => {
             href="https://apps.apple.com/us/app/remedy-platform/id6737006336"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200"
+            className="flex items-center justify-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200 w-36"
           >
             <img 
               src="/lovable-uploads/9f2a41a3-ca0c-4999-bd30-9043082c7f22.png" 
@@ -24,7 +24,7 @@ const Hero = () => {
           </a>
           <a
             href="#"
-            className="flex items-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200"
+            className="flex items-center justify-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200 w-36"
           >
             <img 
               src="/lovable-uploads/03583354-da4b-46f8-93ab-628d020863f9.png" 
