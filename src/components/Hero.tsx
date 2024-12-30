@@ -22,10 +22,9 @@ const Hero = () => {
             />
             iOS
           </a>
-          <button
-            className="flex items-center justify-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200 w-36 opacity-70 cursor-not-allowed"
-            disabled
-            title="Coming soon to Android"
+          <a
+            href="#"
+            className="flex items-center justify-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200 w-36"
           >
             <img 
               src="/lovable-uploads/03583354-da4b-46f8-93ab-628d020863f9.png" 
@@ -33,7 +32,7 @@ const Hero = () => {
               className="w-6 h-6 invert"
             />
             Android
-          </button>
+          </a>
         </div>
       </div>
     </section>
