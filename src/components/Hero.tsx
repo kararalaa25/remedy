@@ -23,7 +23,9 @@ const Hero = () => {
             iOS
           </a>
           <a
-            href="#"
+            href="https://play.google.com/store/apps/details?id=com.enigma.remedy&pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#40E0D0] text-white px-8 py-3 rounded-full hover:bg-[#3CC7B9] transition-colors duration-200 w-36"
           >
             <img 
