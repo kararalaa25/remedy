@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 pt-16 font-['Montserrat']">
+    <section className="min-h-screen flex items-center justify-center px-4 pt-16">
       <div className="text-center max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
           Building knowledge that lasts
