@@ -21,12 +21,11 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <img 
               src="/lovable-uploads/9df97c49-cd0d-46b4-be46-9c1b429470ac.png" 
-              alt="ReMedy Logo" 
+              alt="Remedy Logo" 
               className="h-10 w-10 md:h-12 md:w-12" 
             />
             <span className="text-2xl font-bold">
-              <span style={{ color: "#34ccd2" }}>Re</span>
-              <span style={{ color: "#34ccd2" }}>Medy</span>
+              <span style={{ color: "#34ccd2" }}>Remedy</span>
             </span>
           </Link>
 
