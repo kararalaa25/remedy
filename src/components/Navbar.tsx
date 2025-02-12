@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -24,7 +25,7 @@ const Navbar = () => {
               className="h-10 w-10 md:h-12 md:w-12" 
             />
             <span className="text-2xl font-bold">
-              <span style={{ color: "#fcac4d" }}>Re</span>
+              <span style={{ color: "#34ccd2" }}>Re</span>
               <span style={{ color: "#34ccd2" }}>Medy</span>
             </span>
           </Link>
