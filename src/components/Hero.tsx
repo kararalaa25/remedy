@@ -7,7 +7,7 @@ const Hero = () => {
           Building knowledge that lasts
         </h1>
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-          ReMedy is your trusted companion for mastering medical exams and building confidence for your journey in medicine.
+          Remedy is your trusted companion for mastering medical exams and building confidence for your journey in medicine.
         </p>
         <div className="flex justify-center gap-6">
           <a
