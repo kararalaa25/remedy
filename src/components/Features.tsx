@@ -1,10 +1,11 @@
+
 import { Gift, BookOpen, BarChart, Bookmark, Target, Smartphone } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
       title: "Free Trial",
-      description: "Access over 500 questions for free and explore the full potential of our platform",
+      description: "Access +1000 questions for free and explore the full potential of our platform",
       icon: Gift,
     },
     {
