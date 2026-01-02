@@ -1,5 +1,5 @@
-
 import { Gift, BookOpen, BarChart, Bookmark, Target, Smartphone } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
 
 const Features = () => {
   const features = [
@@ -35,21 +35,61 @@ const Features = () => {
     },
   ];
 
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut" as const,
+      },
+    },
+  };
+
   return (
     <section id="features" className="py-24 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="section-title">Amazing Features</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="section-title"
+        >
+          Amazing Features
+        </motion.h2>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {features.map((feature) => (
-            <div key={feature.title} className="feature-card">
+            <motion.div
+              key={feature.title}
+              variants={itemVariants}
+              className="feature-card"
+            >
               <div className="mb-4">
                 <feature.icon className="w-12 h-12 mx-auto" style={{ color: '#fcac4d' }} />
               </div>
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

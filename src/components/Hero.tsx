@@ -1,15 +1,31 @@
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 pt-16">
       <div className="text-center max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
+        >
           Building knowledge that lasts
-        </h1>
-        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto"
+        >
           Remedy is your trusted companion for mastering medical exams and building confidence for your journey in medicine.
-        </p>
-        <div className="flex justify-center gap-6">
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          className="flex justify-center gap-6"
+        >
           <a
             href="https://apps.apple.com/us/app/remedy-platform/id6737006336"
             target="_blank"
@@ -36,7 +52,7 @@ const Hero = () => {
             />
             Android
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
