@@ -1,3 +1,5 @@
+import { motion, type Variants } from "framer-motion";
+
 const About = () => {
   const sections = [
     {
@@ -14,18 +16,58 @@ const About = () => {
     },
   ];
 
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut" as const,
+      },
+    },
+  };
+
   return (
     <section id="about" className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="section-title text-black">About Remedy</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="section-title text-black"
+        >
+          About Remedy
+        </motion.h2>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {sections.map((section) => (
-            <div key={section.title} className="about-card">
+            <motion.div
+              key={section.title}
+              variants={itemVariants}
+              className="about-card"
+            >
               <h3 className="text-xl font-bold mb-4">{section.title}</h3>
               <p className="text-gray-600">{section.content}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
